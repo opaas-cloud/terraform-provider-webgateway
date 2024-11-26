@@ -57,7 +57,7 @@ func (r *domainResource) Schema(_ context.Context, _ resource.SchemaRequest, res
 	resp.Schema = schema.Schema{
 		Attributes: map[string]schema.Attribute{
 			"domain": schema.Int64Attribute{
-				Required: true,
+				Optional: true,
 			},
 			"ip_address": schema.StringAttribute{
 				Required: true,
