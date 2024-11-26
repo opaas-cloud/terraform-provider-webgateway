@@ -56,7 +56,7 @@ func (r *domainResource) Metadata(_ context.Context, req resource.MetadataReques
 func (r *domainResource) Schema(_ context.Context, _ resource.SchemaRequest, resp *resource.SchemaResponse) {
 	resp.Schema = schema.Schema{
 		Attributes: map[string]schema.Attribute{
-			"domain": schema.Int64Attribute{
+			"domain": schema.StringAttribute{
 				Optional: true,
 			},
 			"ip_address": schema.StringAttribute{
